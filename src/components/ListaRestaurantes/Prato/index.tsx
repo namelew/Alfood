@@ -10,17 +10,17 @@ const Prato = ({ prato }: PratoProps) => {
     <div className={estilos.Container}>
       <div>
         <div className={estilos.EfeitoTorcao}>
-          <img src={prato.imagem} alt={prato.descricao}/>
+          <img src={prato.image} alt={prato.description}/>
         </div>
       </div>
     </div>
     <div className={estilos.Conteudo}>
-      <h3>{prato.nome}</h3>
+      <h3>{prato.name}</h3>
       <div className={estilos.Tag}>
         {prato.tag}
       </div>
       <div>
-        {prato.descricao}
+        {prato.description}
       </div>
     </div>
   </div>)
