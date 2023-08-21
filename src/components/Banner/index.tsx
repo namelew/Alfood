@@ -1,9 +1,9 @@
-import estilos from './Banner.module.scss';
+import styles from './Banner.module.scss';
 
 const Banner = () => {
-  return (<section className={estilos.BannerArea}>
-    <div className={estilos.Container}>
-      <h1 className={estilos.Titulo}>AlFood</h1>
+  return (<section className={styles.BannerArea}>
+    <div className={styles.Container}>
+      <h1 className={styles.Title}>AlFood</h1>
       <p>Felicidade em cada prato.</p>
     </div>
   </section>)

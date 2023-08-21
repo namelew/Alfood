@@ -28,13 +28,13 @@
     }
 }
 
-.Categorias {
+.Categories {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 
-    .TipoDePrato {
+    .DishType {
         text-align: center;
 
         img {

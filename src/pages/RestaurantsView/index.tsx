@@ -1,15 +1,15 @@
 import Banner from 'components/Banner';
-import ListaRestaurantes from 'components/ListaRestaurantes';
+import RestaurantsList from 'components/RestaurantsList';
 import NavBar from 'components/NavBar';
-import Rodape from 'components/Rodape';
+import Footer from 'components/Footer';
 
 function App() {
   return (
     <>
       <NavBar />
       <Banner />
-      <ListaRestaurantes />
-      <Rodape />
+      <RestaurantsList />
+      <Footer />
     </>
   );
 }

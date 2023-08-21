@@ -1,8 +1,8 @@
 import IRestaurant from 'interfaces/IRestaurant';
-import style from './Listarestaurants.module.scss';
-import Restaurante from './Restaurante';
+import style from './RestaurantsList.module.scss';
+import Restaurante from './Restaurant';
 
-const Listarestaurants = () => {
+const RestaurantsList = () => {
 
   const restaurants: IRestaurant[] = [
     {
@@ -89,10 +89,10 @@ const Listarestaurants = () => {
     }
   ]
 
-  return (<section className={style.Listarestaurants}>
+  return (<section className={style.RestaurantsList}>
     <h1>Os restaurants mais <em>bacanas</em>!</h1>
-    {restaurants?.map(item => <Restaurante restaurante={item} key={item.id} />)}
+    {restaurants?.map(item => <Restaurante restaurant={item} key={item.id} />)}
   </section>)
 }
 
-export default Listarestaurants
+export default RestaurantsList
