@@ -1,8 +1,8 @@
 export default interface IDish {
   id: number
-  name: string
+  nome: string
   tag: string
-  image: string
-  description: string
-  restaurant: number
+  imagem: string
+  descricao: string
+  restaurante: number
 }

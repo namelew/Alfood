@@ -10,10 +10,10 @@ const Restaurant = ({ restaurant }: RestaurantProps) => {
 
     return (<section className={styles.Restaurant}>
         <div className={styles.Title}>
-            <h2>{restaurant.name}</h2>
+            <h2>{restaurant.nome}</h2>
         </div>
         <div>
-            {restaurant.dishs?.map(item => <Dish dish={item} key={item.id} />)}
+            {restaurant.pratos?.map(item => <Dish dish={item} key={item.id} />)}
         </div>
     </section>);
 };
