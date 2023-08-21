@@ -1,9 +1,9 @@
-import IRestaurante from '../../../interfaces/IRestaurante';
+import IRestaurant from 'interfaces/IRestaurant';
 import Prato from '../Prato';
 import estilos from './Restaurante.module.scss';
 
 interface RestauranteProps {
-  restaurante: IRestaurante
+  restaurante: IRestaurant
 }
 
 const Restaurante = ({ restaurante }: RestauranteProps) => {

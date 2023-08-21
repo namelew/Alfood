@@ -1,4 +1,4 @@
-export interface IPaginacao<T> {
+export interface IPager<T> {
     count: number
     next: string
     previous: string

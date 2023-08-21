@@ -1,10 +1,10 @@
-import IRestaurante from '../../interfaces/IRestaurante';
+import IRestaurant from 'interfaces/IRestaurant';
 import style from './ListaRestaurantes.module.scss';
 import Restaurante from './Restaurante';
 
 const ListaRestaurantes = () => {
 
-  const restaurantes: IRestaurante[] = [
+  const restaurantes: IRestaurant[] = [
     {
       id: 1,
       nome: "Lyllys Cafe",

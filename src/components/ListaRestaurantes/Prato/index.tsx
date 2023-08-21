@@ -1,8 +1,8 @@
-import IPrato from '../../../interfaces/IPrato';
+import IDish from 'interfaces/IDish';
 import estilos from './Prato.module.scss';
 
 interface PratoProps {
-  prato: IPrato
+  prato: IDish
 }
 
 const Prato = ({ prato }: PratoProps) => {

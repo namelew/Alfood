@@ -1,4 +1,4 @@
-export default interface IPrato {
+export default interface IDish {
   id: number
   nome: string
   tag: string
