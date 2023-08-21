@@ -1,6 +1,6 @@
 import IRestaurant from 'interfaces/IRestaurant';
 import style from './RestaurantsList.module.scss';
-import Restaurante from './Restaurant';
+import Restaurant from './Restaurant';
 
 const RestaurantsList = () => {
 
@@ -91,7 +91,7 @@ const RestaurantsList = () => {
 
     return (<section className={style.RestaurantsList}>
         <h1>Os restaurants mais <em>bacanas</em>!</h1>
-        {restaurants?.map(item => <Restaurante restaurant={item} key={item.id} />)}
+        {restaurants?.map(item => <Restaurant restaurant={item} key={item.id} />)}
     </section>);
 };
 

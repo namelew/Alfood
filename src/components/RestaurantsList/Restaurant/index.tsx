@@ -6,7 +6,7 @@ interface RestaurantProps {
   restaurant: IRestaurant
 }
 
-const Restaurante = ({ restaurant }: RestaurantProps) => {
+const Restaurant = ({ restaurant }: RestaurantProps) => {
 
     return (<section className={styles.Restaurant}>
         <div className={styles.Title}>
@@ -18,4 +18,4 @@ const Restaurante = ({ restaurant }: RestaurantProps) => {
     </section>);
 };
 
-export default Restaurante;
+export default Restaurant;
