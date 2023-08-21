@@ -1,4 +1,4 @@
-import IDish from "./IDish";
+import IDish from './IDish';
 
 export default interface IRestaurant {
   id: number

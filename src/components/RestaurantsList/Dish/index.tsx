@@ -6,24 +6,24 @@ interface DishProps {
 }
 
 const Dish = ({ dish }: DishProps) => {
-  return (<div className={styles.Dish}>
-    <div className={styles.Container}>
-      <div>
-        <div className={styles.TwistEffect}>
-          <img src={dish.image} alt={dish.description}/>
+    return (<div className={styles.Dish}>
+        <div className={styles.Container}>
+            <div>
+                <div className={styles.TwistEffect}>
+                    <img src={dish.image} alt={dish.description}/>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div className={styles.Content}>
-      <h3>{dish.name}</h3>
-      <div className={styles.Tag}>
-        {dish.tag}
-      </div>
-      <div>
-        {dish.description}
-      </div>
-    </div>
-  </div>)
-}
+        <div className={styles.Content}>
+            <h3>{dish.name}</h3>
+            <div className={styles.Tag}>
+                {dish.tag}
+            </div>
+            <div>
+                {dish.description}
+            </div>
+        </div>
+    </div>);
+};
 
-export default Dish
+export default Dish;
