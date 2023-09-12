@@ -1,19 +1,19 @@
 import IRestaurant from 'interfaces/IRestaurant';
 import { TableContainer, Paper, Table, TableHead, TableBody, TableRow, TableCell, Button } from '@mui/material';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { http } from '../../../http';
 import { Link } from 'react-router-dom';
 
 const RestaurantAdmin = () => {
     const [restaurants, setRestaurants] = useState<IRestaurant[]>();
 
     useEffect(() => {
-        axios.get<IRestaurant[]>('http://localhost:8000/api/v2/restaurantes/')
+        http.get<IRestaurant[]>('restaurantes/')
             .then( response => setRestaurants(response.data) );
     }, []);
 
     const Delete = ( restaurant: IRestaurant ) => {
-        axios.delete(`http://localhost:8000/api/v2/restaurantes/${restaurant.id}/`)
+        http.delete(`restaurantes/${restaurant.id}/`)
             .then(() => {
                 setRestaurants(restaurants?.filter(item => item.id !== restaurant.id));
                 alert('Restaurante deletado com sucesso');
