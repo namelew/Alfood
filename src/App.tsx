@@ -5,6 +5,7 @@ import RestaurantAdmin from 'pages/Admin/Restaurants';
 import RestaurantForm from 'pages/Admin/Restaurants/Form';
 import Admin from 'pages/Admin';
 import DishsAdmin from 'pages/Admin/Dishs';
+import DishForm from 'pages/Admin/Dishs/Form';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
                 <Route path='restaurantes/novo' element={<RestaurantForm />}/>
                 <Route path='restaurantes/:id' element={<RestaurantForm />}/>
                 <Route path='pratos' element={<DishsAdmin />}/>
+                <Route path='pratos/novo' element={<DishForm />}/>
+                <Route path='pratos/:id' element={<DishForm />}/>
             </Route>
         </Routes>
     );
