@@ -3,6 +3,7 @@ import Home from 'pages/Home';
 import RestaurantsView from 'pages/RestaurantsView';
 import RestaurantAdmin from 'pages/Admin/Restaurants';
 import RestaurantForm from 'pages/Admin/Restaurants/Form';
+import Admin from 'pages/Admin';
 
 function App() {
 
@@ -10,9 +11,11 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/restaurantes' element={<RestaurantsView />} />
-            <Route path='/admin/restaurantes' element={<RestaurantAdmin />}/>
-            <Route path='/admin/restaurantes/novo' element={<RestaurantForm />}/>
-            <Route path='/admin/restaurantes/:id' element={<RestaurantForm />}/>
+            <Route path='/admin/' element={<Admin></Admin>}>
+                <Route path='restaurantes' element={<RestaurantAdmin />}/>
+                <Route path='restaurantes/novo' element={<RestaurantForm />}/>
+                <Route path='restaurantes/:id' element={<RestaurantForm />}/>
+            </Route>
         </Routes>
     );
 }
